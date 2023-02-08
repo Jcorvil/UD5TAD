@@ -54,5 +54,25 @@ public class EjemploConjunto {
         conjunto2.add("s4");
         conjunto.retainAll(conjunto2);
         System.out.println(conjunto);
+
+
+        //
+        Set<Integer> numbers = new HashSet<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        System.out.println("Hashset1: " + numbers);
+
+        HashSet<Integer> primeNumbers = new HashSet<>();
+        primeNumbers.add(2);
+        primeNumbers.add(3);
+        System.out.println("Hashset2: " + primeNumbers);
+
+        System.out.println("¿Contiene 'numbers' los numeros primos? " + numbers.containsAll(primeNumbers));
+
+
+        //
+
     }
 }
