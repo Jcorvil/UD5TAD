@@ -19,6 +19,7 @@ public class TreeSetEjercicio {
             System.out.print(it.next() + " ");
         }
         System.out.println(" ");
+
         //4.-Haz lo mismo utilizando nombres de alumnos.
         Set<String> conjuntoAlumnos = new TreeSet<>();
         conjuntoAlumnos.add("Jorge");
@@ -30,8 +31,21 @@ public class TreeSetEjercicio {
             System.out.print(itAlumnos.next() + " ");
         }
         System.out.println(" ");
+
         //5.-Haz lo mismo utilizando objetos de la clase Persona.
         //Una persona tiene nombre y edad. Además se ordenarán por nombre.
+        TreeSet<Persona> treeSetPersona = new TreeSet<>();
+        Persona jorge = new Persona("Jorge", 25);
+        Persona daniel = new Persona("Daniel", 21);
+        Persona diego = new Persona("Diego", 20);
+        treeSetPersona.add(jorge);
+        treeSetPersona.add(daniel);
+        treeSetPersona.add(diego);
 
+        for (Persona e : treeSetPersona) {
+            System.out.println(e);
+        }
+
+        System.out.println(jorge.equals(daniel));
     }
 }
