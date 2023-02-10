@@ -47,5 +47,12 @@ public class TreeSetEjercicio {
         }
 
         System.out.println(jorge.equals(daniel));
+
+        ComparadorEdadPersona comparador1 = new ComparadorEdadPersona();
+        TreeSet<Persona> comparadorPersona = new TreeSet<>(new ComparadorEdadPersona());
+        comparadorPersona.add(jorge);
+        comparadorPersona.add(daniel);
+        comparadorPersona.add(diego);
+        System.out.println(comparadorPersona);
     }
 }

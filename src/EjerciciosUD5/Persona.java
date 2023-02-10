@@ -48,15 +48,8 @@ public class Persona implements Comparable {
     public int compareTo(Object other) {
         Persona otherPersona = (Persona) other;
         //Para ordenar por nombre.
-        //return this.nombre.compareTo(otherPersona.nombre);
-        //Para ordenar por edad.
-        if (this.edad == otherPersona.edad) {
-            return 0;
-        }
-        if (this.edad > otherPersona.edad) {
-            return 1;
-        }
-        return -1;
+        return this.nombre.compareTo(otherPersona.nombre);
+
     }
 
     @Override
