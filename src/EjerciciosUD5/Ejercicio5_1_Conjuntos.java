@@ -31,6 +31,6 @@ public class Ejercicio5_1_Conjuntos {
         //comparadorPersona.add(null);
 
         System.out.println(comparadorPersona);
-        
+
     }
 }
