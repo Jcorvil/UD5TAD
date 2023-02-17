@@ -17,7 +17,7 @@ public class Ejercicio5_1_Conjuntos {
         //por edad, del mas joven al mas viejo.
         Persona jorge = new Persona("Jorge", 25);
         Persona jorge1 = new Persona("Jorge", 35);
-        //Si introducimos dor personas iguales (como Daniel en este caso), solo acepta uno de los dos, por lo que no
+        //Si introducimos dos personas iguales (como Daniel en este caso), solo acepta uno de los dos, por lo que no
         // se pueden repetir personas.
         Persona daniel = new Persona("Daniel", 21);
         Persona daniel1 = new Persona("Daniel", 21);
