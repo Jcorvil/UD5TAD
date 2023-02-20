@@ -35,6 +35,7 @@ public class EjemploRecorrerLista {
             if (i > 20){
                 it.remove();
             }
+            //Añade '10' antes del '15'
             if(i == 15){
                 it.add(10);
             }
