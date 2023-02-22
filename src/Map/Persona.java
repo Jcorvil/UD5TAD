@@ -1,4 +1,4 @@
-package Conjunto;
+package Map;
 
 public class Persona {
     String nombre;
@@ -8,7 +8,7 @@ public class Persona {
         this.nombre = nombre;
         this.edad = edad;
     }
-    public Persona(){}
+    Persona(){}
 
     @Override
     public String toString() {
