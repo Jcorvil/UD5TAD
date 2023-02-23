@@ -98,7 +98,6 @@ public class EjemploMap {
         notas.put(10, "Matricula honor");
         System.out.println(notas. values());
         System.out.println(notas.get(notas.firstKey()));
-        System.out.println(notas.get(notas.firstEntry().getValue()));
         System.out.println(notas.lowerKey(7));
 
 
