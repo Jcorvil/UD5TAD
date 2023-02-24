@@ -6,40 +6,46 @@ public class TaskList {
 
     public static void addTaskArray (List<String> taskArray, String tarea){
 
-        System.out.println("Introduzca una tarea.");
         taskArray.add(tarea);
-
-        System.out.println("Lista de tareas: " + taskArray);
 
     }
 
     public static void addTaskList (List<String> taskList, String tarea){
 
-        System.out.println("Introduzca una tarea.");
         taskList.add(tarea);
-
-        System.out.println("Lista de tareas: " + taskList);
 
     }
 
 
     public static void removeTaskArray (List<String> taskArray, String tarea){
 
-        System.out.println("Introduzca una tarea para eliminar.");
         taskArray.remove(tarea);
-
-        System.out.println("Lista de tareas: " + taskArray);
 
     }
 
 
     public static void removeTaskList (List<String> taskList, String tarea){
 
-        System.out.println("Introduzca una tarea para eliminar.");
         taskList.remove(tarea);
 
-        System.out.println("Lista de tareas: " + taskList);
+    }
 
+    public static void mostrarTaskArray (List<String> taskArray){
+        System.out.print("[ ");
+        for(int i = 0; i < taskArray.size(); i++) {
+            System.out.print(taskArray.get(i));
+            System.out.print(", ");
+        }
+        System.out.print(" ]");
+    }
+
+    public static void mostrarTaskList (List<String> taskList){
+        System.out.print("[ ");
+        for(int i = 0; i < taskList.size(); i++) {
+            System.out.print(taskList.get(i));
+            System.out.print(", ");
+        }
+        System.out.print(" ]");
     }
 
 }

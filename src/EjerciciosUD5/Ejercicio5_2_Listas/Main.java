@@ -27,8 +27,14 @@ public class Main {
         TaskList.removeTaskArray(listaTareasArray, "Ejercicio Programación");
 
         //Eliminar LinkedList
-        TaskList.removeTaskList(listaTareasArray, "Ejercicio Programación");
+        TaskList.removeTaskList(listaTareasLinked, "Ejercicio Programación");
 
+
+        //Devolver arreglo LinkedList
+        TaskList.mostrarTaskList(listaTareasLinked);
+        System.out.println("");
+        //Devolver arreglo ArrayList
+        TaskList.mostrarTaskArray(listaTareasArray);
 
     }
 }

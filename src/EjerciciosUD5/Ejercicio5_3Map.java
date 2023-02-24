@@ -14,6 +14,7 @@ public class Ejercicio5_3Map {
 
         instanciasNumeros(numeros);
 
+
     }
 
 
@@ -25,9 +26,13 @@ public class Ejercicio5_3Map {
             }else contadorNumeros.put(clave, 1);
         }
 
-        Iterator<Integer> itElementos = contadorNumeros.values().iterator();
+        Iterator<Integer> itElementos = contadorNumeros.keySet().iterator();
         while(itElementos.hasNext()){
-            System.out.println(itElementos.next());
+            Integer key = itElementos.next();
+            System.out.print(key);
+            System.out.print(" = ");
+            System.out.print(contadorNumeros.get(key));
+            System.out.println("");
         }
 
     }

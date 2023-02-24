@@ -10,10 +10,10 @@ public class ComparadorEdadPersona implements Comparator<Persona> {
     @Override
     public int compare (Persona o1, Persona o2) {
 
-    if (o1.edad == o2.edad) {
+    if (o2.edad == o1.edad) {
         return 0;
     }
-    if (o1.edad > o2.edad) {
+    if (o2.edad > o1.edad) {
         return 1;
     }
     return -1;
