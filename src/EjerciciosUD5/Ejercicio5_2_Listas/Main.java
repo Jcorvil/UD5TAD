@@ -7,8 +7,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        List<String> listaTareasArray = new ArrayList<>();
-        List<String> listaTareasLinked = new LinkedList<>();
+        ArrayList<String> listaTareasArray = new ArrayList<>();
+        LinkedList<String> listaTareasLinked = new LinkedList<>();
 
         //Añadir ArrayList
         TaskList.addTaskArray(listaTareasArray, "Ejercicio Programación");

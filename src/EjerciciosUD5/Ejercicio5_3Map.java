@@ -1,8 +1,8 @@
 package EjerciciosUD5;
 
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class Ejercicio5_3Map {
     public static void main(String[] args) {
@@ -13,17 +13,16 @@ public class Ejercicio5_3Map {
         Integer[] numeros = {24,4,11,7,11,4,24,24,4,2,9};
 
         instanciasNumeros(numeros);
-
-
     }
 
 
     public static void instanciasNumeros(Integer[] numeros){
-        Map<Integer, Integer> contadorNumeros = new HashMap<>();
+        Map<Integer, Integer> contadorNumeros = new TreeMap<>();
         for (Integer clave : numeros) {
             if (contadorNumeros.containsKey(clave)){
                 contadorNumeros.put(clave, contadorNumeros.get(clave) + 1);
-            }else contadorNumeros.put(clave, 1);
+            }else
+                contadorNumeros.put(clave, 1);
         }
 
         Iterator<Integer> itElementos = contadorNumeros.keySet().iterator();
