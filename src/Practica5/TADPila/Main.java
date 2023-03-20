@@ -1,8 +1,8 @@
-package Practica5;
+package Practica5.TADPila;
 
 import java.util.Stack;
 
-public class TADPila {
+public class Main {
     public static void main(String[] args) {
         //Stack (traducido como pila) añade los elementos en orden de inserción, pero a la hora de trabajar con ellos
         //siempre va a tratarlos de la forma inversa.
