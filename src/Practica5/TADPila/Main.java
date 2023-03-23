@@ -1,7 +1,5 @@
 package Practica5.TADPila;
 
-import java.util.Stack;
-
 public class Main {
     public static void main(String[] args) {
         //Stack (traducido como pila) añade los elementos en orden de inserción, pero a la hora de trabajar con ellos
@@ -29,7 +27,7 @@ public class Main {
         System.out.println("/-/-/-/-/-/-/-/-/-/");
         //Método cima. Muestra el último elemento de la pila
         System.out.println("Último elemento de la pila");
-        System.out.println(torre.cima());
+        torre.cima();
         System.out.println("/-/-/-/-/-/-/-/-/-/");
         //Método limpiar. Deja la pila vacía
         torre.limpiar();

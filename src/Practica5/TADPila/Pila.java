@@ -1,26 +1,25 @@
 package Practica5.TADPila;
 
-import java.util.Stack;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Pila {
 
-    private Stack<Object> torre = new Stack<>();
+    private List<Object> torre = new LinkedList<>();
     public void apilar (Object elemento){
-        torre.push(elemento);
+        torre.add(elemento);
     }
 
     public void desapilar(){
-        torre.pop();
+        torre.remove(torre.size() - 1);
     }
 
-    public Object cima(){
-        return torre.peek();
+    public void cima(){
+        System.out.println(torre.get(torre.size() - 1));
     }
 
     public void limpiar(){
-        while (torre.size() > 0){
-            torre.pop();
-        }
+        torre.clear();
     }
 
     public boolean esVacia(){
